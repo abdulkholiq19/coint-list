@@ -1,38 +1,113 @@
-.App {
+
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);
+}
+
+.navbar-text{
+  color: #8597AC !important;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+}
+
+.text-property{
+  color: #8597AC !important;
+  padding: 0;
+}
+
+.text-value{
+  color: #000000 !important;
+  font-weight: bold;
+  padding: 0;
+}
+
+.text-value-capitalize{
+  color: #000000 !important;
+  font-weight: bold;
+  padding: 0;
+}
+.text-value-capitalize::first-letter{
+  color: #000000 !important;
+  font-weight: bold;
+  padding: 0;
+  text-transform: uppercase;
+}
+.active{
+  color: #2569A5 !important;
+  padding-bottom: none;
+  border-bottom: 5px solid #2569A5;
+}
+
+p.head-title{
+  color: #8597AC !important;
+  padding: 30px 0px 10px 0px;
+  font-weight: bold;
+}
+
+.card-table{
+  box-shadow: -2px 3px 10px 5px rgb(37 106 164 / 50%)
+}
+
+.table{
+  color: #3683C6 !important;
+}
+.table-head{
+  background-color: #3683C6;
+  color: white;
+  border: none;
+}
+
+p.table-title{
+  color: #2569A5 !important;
+  padding: 30px 0px 20px 0px;
+  font-weight: bold;
+}
+
+table{
+  border-width: 0
+}
+th {
+  background-color: #2569A5 !important;
+  color: white !important;
+  border: none !important;
+}
+
+th.sortable:first-child {
+  padding-left: 20px !important;
+}
+
+td {
+  vertical-align: middle;
+  color: #8597AC !important;
+  border: none !important;
+}
+
+td:first-child {
+  color: #2569A5 !important;
+}
+td:nth-child(5):first-letter {
+  text-transform: uppercase;
+}
+td:nth-child(6):first-letter {
+  text-transform: uppercase;
+}
+
+td:last-child {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th:last-child {
+  text-align: center;
+}
+ul.pagination.react-bootstrap-table-page-btns-ul {
+  color: #2569A5 !important;
+  justify-content: end;
+}
+.page-item .page-link {
+  color: #2569A5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-item.active .page-link {
+  background-color: #2569A5 !important;
+  border-color: #2569A5 !important;
 }
